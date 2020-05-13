@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Павел Корчагин](https://up.htmlacademy.ru/htmlcss/28/user/1058499).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
