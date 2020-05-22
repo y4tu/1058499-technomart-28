@@ -298,21 +298,17 @@
 
   <section>
     <!--Попап обратной связи-->
-    <div>
-      <form method="post" action="https://echo.htmlacademy.ru/" id="form-message">
-        <h2>Форма обратной связи.</h2>
-        <label>Ваше имя:<br><input name="name" type="text" placeholder="Имя Фамилия" /></label><br>
-        <label>Ваш e-mail:<br><input name="email" type="text" placeholder="email@example.com" /></label>
-        <div>
-          <label>
-            Текст письма:<br>
-            <textarea name="letter" rows="6" placeholder="В свободной форме"></textarea>
-          </label>
-        </div>
-        <div class="popup_bottom"><input type="submit" value="Оформить заказ"></div>
-        <button>X</button>
-      </form>
-    </div>
+    <form method="post" action="https://echo.htmlacademy.ru/" id="form-message" class="popup_bottom">
+      <h2>Форма обратной связи.</h2>
+      <label>Ваше имя:<br><input name="name" type="text" placeholder="Имя Фамилия" required></label><br>
+      <label>Ваш e-mail:<br><input name="email" type="email" placeholder="email@example.com" required></label><br>
+      <label><br>
+        Текст письма:<br>
+        <textarea name="letter" rows="6" placeholder="В свободной форме"></textarea>
+      </label><br>
+      <input type="submit" value="Оформить заказ"><br>
+      <button type="button">X</button>
+    </form>
   </section>
 
 </body>

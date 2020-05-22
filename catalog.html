@@ -65,18 +65,21 @@
       </div>
       <div>
         <h2 class="hammer_drill">Перфораторы</h2>
-        <form method="post" action="https://echo.htmlacademy.ru/">
+        <form method="get" action="https://echo.htmlacademy.ru/">
           <h2 class="filter">Фильтр:</h2>
-          <div>
-            <h3>Цена:</h3>
-            <div><input name="price" type="range" /></div>
+          <fieldset>
+            <legend>
+              <h3>Цена:</h3>
+            </legend>
+            <input name="price" type="range" class="price_field"><br>
             <input name="price_min" type="number" class="price_field">
             <span>-</span>
-            <input name="price_max" type="number" class="price_field">
-          </div>
-          <hr>
-          <div>
-            <h3>Производители:</h3>
+            <input name="price_max" type="number" class="price_field"><br>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <h3>Производители:</h3>
+            </legend>
             <ul>
               <li><input type="checkbox" checked>
                 <p>Bosch</p>
@@ -94,10 +97,11 @@
                 <p>Hitachi</p>
               </li>
             </ul>
-          </div>
-          <hr>
-          <div>
-            <h3>Питание:</h3>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <h3>Питание:</h3>
+            </legend>
             <ul>
               <li><input type="radio" name="power" checked>
                 <p>Аккумуляторное</p>
@@ -106,12 +110,12 @@
                 <p>Сетевое</p>
               </li>
             </ul>
-            <button type="submit">Показать</button>
-          </div>
+          </fieldset>
+          <button type="submit">Показать</button>
         </form>
       </div>
       <div class="sorting">
-        <p>Сортировка:</p>
+        <h2>Сортировка:</h2>
         <ul>
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
