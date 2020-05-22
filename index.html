@@ -10,13 +10,11 @@
 
 <body>
   <header class="header">
-    <h1>Техномарт - интернет-магазин строительныхматериалов и инструментов для ремонта.</h1>
+    <h1 class="visually_hidden">Техномарт - интернет-магазин строительных материалов и инструментов для ремонта.</h1>
     <div class="upper_string">
       <img src="img/logo_technomart.svg" alt="Логотип техномарт" width="108" height="18">
       <form action="https://echo.htmlacademy.ru/" method="get">
-        <button type="submit">
-          Поиск
-        </button>
+        <button type="submit" aria-label="Поиск">Поиск</button>
         <input type="search" placeholder="Поиск:">
       </form>
       <ul>
@@ -76,15 +74,16 @@
         </li>
       </ul>
       <div>
+        <!--Slider-->
         <div>
           <h2>Перфораторы</h2>
           <p>Настоящие мужские игрушки</p>
-          <img src="img/index/hammer_drills.jpg" alt="Перфораторы" width="620" height="266">
+          <img src="img/index/hammer_drills.jpg" alt="Рабочий с перфоратором" width="620" height="266">
         </div>
         <div>
           <h2>Дрели</h2>
           <p>Соседям на радость!</p>
-          <img src="img/index/drills.jpg" alt="Дрели" width="620" height="266">
+          <img src="img/index/drills.jpg" alt="Рабочий с дрелью" width="620" height="266">
         </div>
         <a href="#" class="control-prev">
           ←
@@ -94,6 +93,7 @@
         </a>
         <a href="catalog.html">Открыть каталог</a>
       </div>
+      <!--Slider-->
       <div>
         <h2>Популярные товары:</h2>
         <a href="catalog.html">Все популярные товары</a>
@@ -138,28 +138,28 @@
         <a href="catalog.html">Все производители</a>
         <ul>
           <li>
-            <a href="#"><img src="img/index/bosch.png" alt="BOSCH" width="126" height="37"></a>
+            <a href="#"><img src="img/index/bosch.png" alt="Логотип BOSCH" width="126" height="37"></a>
           </li>
           <li>
-            <a href="#"><img src="img/index/makita.png" alt="MAKITA" width="123" height="40"></a>
+            <a href="#"><img src="img/index/makita.png" alt="Логотип MAKITA" width="123" height="40"></a>
           </li>
           <li>
-            <a href="#"><img src="img/index/dewalt.png" alt="DeWALT" width="146" height="44"></a>
+            <a href="#"><img src="img/index/dewalt.png" alt="Логотип DeWALT" width="146" height="44"></a>
           </li>
           <li>
-            <a href="#"><img src="img/index/interskol.png" alt="ИНТЕРСКОЛ" width="200" height="88"></a>
+            <a href="#"><img src="img/index/interskol.png" alt="Логотип ИНТЕРСКОЛ" width="200" height="88"></a>
           </li>
           <li>
-            <a href="#"><img src="img/index/hitachi.png" alt="HITACHI" width="169" height="31"></a>
+            <a href="#"><img src="img/index/hitachi.png" alt="Логотип HITACHI" width="169" height="31"></a>
           </li>
           <li>
-            <a href="#"><img src="img/index/lg.png" alt="LG" width="121" height="73"></a>
+            <a href="#"><img src="img/index/lg.png" alt="Логотип LG" width="121" height="73"></a>
           </li>
           <li>
-            <a href="#"><img src="img/index/aeg.png" alt="AEG" width="151" height="96"></a>
+            <a href="#"><img src="img/index/aeg.png" alt="Логотип AEG" width="151" height="96"></a>
           </li>
           <li>
-            <a href="#"><img src="img/index/metabo.png" alt="metabo" width="204" height="69"></a>
+            <a href="#"><img src="img/index/metabo.png" alt="Логотип metabo" width="204" height="69"></a>
           </li>
         </ul>
       </div>
@@ -215,12 +215,6 @@
     <section>
       <!--Контакты-->
       <div>
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a href="#"><img src="img/index/mini_map.jpg" alt="Миникарта" width="300" height="158"></a>
-        <a href="#">Заблудились? Напишите нам!</a>
-      </div>
-      <div>
         <h2>Компания "Техномарт"</h2>
         <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для<br>
           ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
@@ -233,6 +227,12 @@
           <li>ЖелДорЭкспедиция</li>
         </ul>
         <a href="#">Подробнее о компании</a>
+      </div>
+      <div>
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <a href="#"><img src="img/index/mini_map.jpg" alt="Миникарта" width="300" height="158"></a>
+        <a href="#">Заблудились? Напишите нам!</a>
       </div>
     </section>
   </main>
@@ -260,17 +260,17 @@
         Все права защищены</p>
       <ul>
         <li>
-          <a href="https://vk.com/">
+          <a href="https://vk.com/" aria-label="Ссылка на Техномарт в вконтакте">
             Вконтакте
           </a>
         </li>
         <li>
-          <a href="https://ru-ru.facebook.com/">
+          <a href="https://ru-ru.facebook.com/" aria-label="Ссылка на Техномарт в facebook">
             Facebook
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/" aria-label="Ссылка на Техномарт в instagram">
             Instagram
           </a>
         </li>

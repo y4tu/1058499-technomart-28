@@ -58,10 +58,21 @@
   background-color: #F7F3EC;
 }
 
-.few_words {
+.general_product_information {
   background-color: #F1F5F7;
 }
 
 .popup_bottom {
   background-color: #F1F1F1;
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

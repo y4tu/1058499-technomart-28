@@ -10,11 +10,11 @@
 
 <body>
   <header class="header">
-    <h1>Техномарт - интернет-магазин строительныхматериалов и инструментов для ремонта.</h1>
+    <h1 class="visually_hidden">Техномарт - интернет-магазин строительных материалов и инструментов для ремонта.</h1>
     <div class="upper_string">
       <a href="index.html"><img src="img/logo_technomart.svg" alt="Логотип техномарт" width="108" height="18"></a>
       <form action="https://echo.htmlacademy.ru/" method="get">
-        <button type="submit">Поиск</button>
+        <button type="submit" aria-label="Поиск">Поиск</button>
         <input type="search" placeholder="Поиск:">
       </form>
       <ul>
@@ -35,9 +35,9 @@
     <div>
       <ul>
         <li>
-          <a href="#">Пользователь: Равшан Джамшутович</a>
+          <a href="#" aria-label="Личный кабинет">Пользователь: Равшан Джамшутович</a>
         </li>
-        <li><a href="#">Выход</a></li>
+        <li><a href="#" aria-label="Выход">Выход</a></li>
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
@@ -58,6 +58,7 @@
       <!--Каталог-->
       <div>
         <ul>
+          <li><a href="" aria-label="На главную">Домой</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a>Перфораторы</a></li>
@@ -72,9 +73,9 @@
               <h3>Цена:</h3>
             </legend>
             <input name="price" type="range" class="price_field"><br>
-            <input name="price_min" type="number" class="price_field">
+            <input name="price_min" type="number" class="price_field" placeholder="0">
             <span>-</span>
-            <input name="price_max" type="number" class="price_field"><br>
+            <input name="price_max" type="number" class="price_field" placeholder="30000"><br>
           </fieldset>
           <fieldset>
             <legend>
@@ -120,8 +121,8 @@
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
-          <li><a href="#">↑</a></li>
-          <li><a href="#">↓</a></li>
+          <li><a href="#" aria-label="По возрастанию">↑</a></li>
+          <li><a href="#" aria-label="По убыванию">↓</a></li>
         </ul>
       </div>
       <ul>
@@ -209,7 +210,7 @@
       </ul>
     </section>
 
-    <section class="few_words">
+    <section class="general_product_information">
       <!-- Общее описание категории -->
       <h2>Пара слов о перфораторах</h2>
       <p>
@@ -226,7 +227,7 @@
 
   <footer class="footer">
     <div>
-      <a href="#"><img src="img/logo_technomart.svg" alt="Логотип техномарт" width="138" height="23"></a>
+      <a href="index.html"><img src="img/logo_technomart.svg" alt="Логотип техномарт" width="138" height="23"></a>
       <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       <ul>
         <li><a href="#">Компания</a></li>
@@ -247,17 +248,17 @@
         Все права защищены</p>
       <ul>
         <li>
-          <a href="https://vk.com/">
+          <a href="https://vk.com/" aria-label="Ссылка на Техномарт в вконтакте">
             Вконтакте
           </a>
         </li>
         <li>
-          <a href="https://ru-ru.facebook.com/">
+          <a href="https://ru-ru.facebook.com/" aria-label="Ссылка на Техномарт в facebook">
             Facebook
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/" aria-label="Ссылка на Техномарт в instagram">
             Instagram
           </a>
         </li>
