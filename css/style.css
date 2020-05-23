@@ -10,7 +10,7 @@
   background-color: #32425C;
 }
 
-.upper_string {
+.header-upper-string {
   background-color: #293449;
 }
 
@@ -38,11 +38,11 @@
   background-color: #F1F5F7;
 }
 
-.footer_bottom {
+.footer-bottom {
   background-color: #293449;
 }
 
-.hammer_drill {
+.hammer-drill {
   background-color: #F2F6F8;
 }
 
@@ -50,7 +50,7 @@
   background-color: #F7F3EC;
 }
 
-.price_field {
+.price-filter {
   background-color: #F7F3EC;
 }
 
@@ -58,15 +58,15 @@
   background-color: #F7F3EC;
 }
 
-.general_product_information {
+.general-product-information {
   background-color: #F1F5F7;
 }
 
-.popup_bottom {
+.popup-bottom {
   background-color: #F1F1F1;
 }
 
-.visually_hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -75,4 +75,16 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.dir-up {
+  transform: scale(1, -1)
+}
+
+/*.control-next {
+  transform: scale(-1, 1);
+}*/
+
+body {
+  background-color: grey;
 }
