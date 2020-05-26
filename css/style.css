@@ -1,70 +1,28 @@
-.header {
-  background-color: #F3F7F9;
+/*Variables*/
+
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --background-gray: #32425C;
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-graydark: #293449;
+  --basic-gray: #3D546F;
+  --basic-graylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --basic-yellow: #FFC047;
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --special-beige: #F7F3EC;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
 }
 
-.footer {
-  background-color: #32425C;
-}
-
-.menu {
-  background-color: #32425C;
-}
-
-.header-upper-string {
-  background-color: #293449;
-}
-
-.materials {
-  background-color: #FFBF47;
-}
-
-.tools {
-  background-color: #3BBCE3;
-}
-
-.equipment {
-  background-color: #DC91D8;
-}
-
-.sale50 {
-  background-color: #8ED78F;
-}
-
-.shipping {
-  background-color: #FFC047;
-}
-
-.services {
-  background-color: #F1F5F7;
-}
-
-.footer-bottom {
-  background-color: #293449;
-}
-
-.hammer-drill {
-  background-color: #F2F6F8;
-}
-
-.filter {
-  background-color: #F7F3EC;
-}
-
-.price-filter {
-  background-color: #F7F3EC;
-}
-
-.sorting {
-  background-color: #F7F3EC;
-}
-
-.general-product-information {
-  background-color: #F1F5F7;
-}
-
-.popup-bottom {
-  background-color: #F1F1F1;
-}
+/*Visually hidden*/
 
 .visually-hidden {
   position: absolute;
@@ -77,14 +35,367 @@
   overflow: hidden;
 }
 
+/*Global*/
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--white);
+  background-position: top center;
+  background-repeat: no-repeat;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Header*/
+
+.header {
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: var(--basic-background);
+}
+
+.search input {
+  background-color: transparent;
+  border-style: none;
+}
+
+.search input::placeholder {
+  color: var(--white);
+}
+
+.header ul {
+  list-style: inherit;
+}
+
+.header a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: transparent;
+  color: var(--white);
+}
+
+.header-logo-wraper,
+.header-nav {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.header-logo-wraper {
+  background-color: var(--basic-graydark);
+}
+
+.technomart {
+  width: 220px;
+  height: 47px;
+  border-bottom-style: inset;
+  border-bottom-width: 5px;
+  border-bottom-color: var(--error);
+  background-color: var(--basic-red);
+  align-items: center;
+}
+
+.technomart img {
+  margin-left: 55px;
+  margin-right:57px;
+  margin-top:12px;
+  margin-bottom:17px;
+  background-color: transparent;
+}
+
+.header-logo-wraper svg {
+  opacity: 0.5;
+}
+
+.header-logo-wraper svg:hover {
+  opacity: 1;
+}
+
+.header-logo-wraper button {
+  background-color: transparent;
+  border-style: none;
+  border-color: none;
+}
+
+.header-logo-wraper .checkout {
+  background-color: var(--success);
+}
+
+.header-nav {
+  background-color: var(--background-gray);
+}
+
+.header-main ul {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.header-main p {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  background-color: transparent;
+  color: var(--basic-red);
+}
+
+.login {
+  background-color: transparent;
+  display: inline;
+}
+
+.login a {
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.login .orders,
+.login .personal-area {
+  background-color: transparent;
+  color: var(--background-gray);
+}
+
+.header-contacts a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  border-style: solid;
+  border-color: var(--white);
+  color: var(--basic-red);
+}
+
+.header-contacts address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: transparent;
+  color: var(--background-gray);
+}
+
+                    .username path {
+                      fill: var(--basic-graylight);
+                    }
+
+                    .username a:hover {
+                      color: var(--basic-red);
+                    }
+
+                    .username path:hover {
+                      fill: var(--basic-gray);
+                    }
+
+                    .username div:hover {}
+
+/*Main*/
+
+.main ul {
+  list-style: inherit;
+}
+
+.main a {
+
+}
+
+/*Partitions*/
+
+.main-partitions {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.main-partitions li {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.main-partitions a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.partitions-first {
+  background-color: var(--special-yellow);
+}
+
+.partitions-second {
+  background-color: var(--special-blue);
+}
+
+.partitions-third {
+  background-color: var(--special-lilac);
+}
+
+.partitions-fourth {
+  background-color: var(--special-greenlight);
+}
+
+.partitions-fifth {
+  background-color: var(--basic-yellow);
+}
+
+.partitions-slider {
+
+}
+
+/*Crumbs*/
+
+.crumbs {
+
+}
+
+/*Catalog*/
+
+.catalog {
+
+}
+
+/*Info*/
+
+.main-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.main-info h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main-info ul {
+  list-style: inherit;
+}
+
+.main-info li {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-info a {
+  width: 220px;
+  height: 38px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--white);
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: var(--background-gray);
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.footer ul {
+  list-style: inherit;
+}
+
+.list-top a {
+  text-align: center;
+  color: var(--white);
+}
+
+.list-bottom a {
+  color: var(--special-yellowlight);
+}
+
+.footer-bottom {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-bottom a {
+  color: var(--special-yellowlight);
+}
+
+.services {
+  background-color: var(--basic-background);
+}
+
+.footer-bottom {
+  background-color: var(--basic-graydark);
+}
+
+.hammer-drill {
+  background-color: var(--basic-background);
+}
+
+.filter {
+  background-color: var(--special-beige);
+}
+
+.price-filter {
+  background-color: var(--special-beige);
+}
+
+.sorting {
+  background-color: var(--special-beige);
+}
+
+.general-product-information {
+  background-color: var(--basic-background);
+}
+
+.popup-bottom {
+  background-color: var(--basic-background);
+}
+
 .dir-up {
   transform: scale(1, -1)
 }
 
-/*.control-next {
-  transform: scale(-1, 1);
-}*/
-
-/*body {
-  background-color: grey;
-}*/
+.popup {
+  display: none;
+}

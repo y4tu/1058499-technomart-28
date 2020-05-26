@@ -8,16 +8,19 @@
   </title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <h1 class="visually-hidden">Техномарт - интернет-магазин строительных материалов и инструментов для ремонта.</h1>
-    <div class="header-upper-string">
-      <a href="index.html">
+    <h1 class="visually-hidden">
+      Техномарт - интернет-магазин строительных материалов и инструментов для ремонта.
+    </h1>
+    <div class="header-logo-wraper">
+      <a href="index.html" class="technomart">
         <img src="img/logo-technomart.svg" alt="Логотип техномарт" width="108" height="18">
       </a>
-      <form action="https://echo.htmlacademy.ru/" method="get">
+      <form action="https://echo.htmlacademy.ru/" method="get" class="search">
         <button type="submit" aria-label="Поиск">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
             <path fill="#fff" fill-rule="evenodd" d="M13.5 12l3.5 3.6-1.4 1.4-3.6-3.5a7.5 7.5 0 01-12-6A7.5 7.5 0 1113.5 12zm-6-10a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" clip-rule="evenodd"/>
@@ -29,57 +32,68 @@
       </form>
       <ul>
         <li>
-          <a href="#">
+          <a href="#" class="icon-bookmark">
             Закладки:
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="icon-cart">
             Корзина:
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="checkout">
             Оформить заказ
           </a>
         </li>
       </ul>
     </div>
-    <div>
-      <p>
-        Интернет-магазин<br>
-        строительных материалов<br>
-        и инструментов для ремонта
-      </p>
+    <div class="header-main">
+      <div>
+        <p>
+          Интернет-магазин<br>
+          строительных материалов<br>
+          и инструментов для ремонта
+        </p>
+      </div>
+      <div class="header-contacts">
+        <a href="tel://+78125550555">
+          +7 (812) 555-05-55
+        </a>
+        <address>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+      </div>
+      <div>
+        <ul class="login">
+          <li class="username">
+            <div class="">
+              <a href="#" aria-label="Выход">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none">
+                  <path d="M17.9 14.2a22 22 0 01-5.2-2.4c-.7-.5-.8-1.6-.5-2.4A5.5 5.5 0 0014 5C14 2.3 12.2 0 10 0S6 2.3 6 5c0 1.9.7 3.5 1.8 4.4.3.8.2 1.9-.5 2.4-1 .7-3 1.6-5.2 2.4C0 14.9 0 18 0 18h20s0-3.1-2.1-3.8z"/>
+                </svg>
+                Равшан Джамшутович
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="none">
+                  <path d="M20 8.5L11.1 0v6h-6v5h6v6L20 8.5z"/>
+                  <path d="M2.1 14V3c0-.3.2-1 1-1h5V0h-5C1 0 .1 1.8.1 3v11c0 1.2.8 3 3 3h5v-2h-5c-.8 0-1-.7-1-1z"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="orders">
+              Мои заказы
+            </a>
+          </li>
+          <li>
+            <a href="#" class="personal-area">
+              Личный кабинет
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <a href="tel://+78125550555">
-        +7 (812) 555-05-55
-      </a>
-      <address>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
-    </div>
-    <div>
-      <ul>
-        <li>
-          <a href="#" aria-label="Выход">
-            Равшан Джамшутович
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Мои заказы
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Личный кабинет
-          </a>
-        </li>
-      </ul>
-    </div>
-    <ul class="menu">
+    <ul class="header-nav">
       <li>
         <a href="#">
           Главная
@@ -118,33 +132,31 @@
     </ul>
   </header>
 
-  <main>
-    <section>
+  <main class="main">
+    <section class="main-catalog">
       <!--Каталог-->
-      <div>
-        <ul>
-          <li>
-            <a href="" aria-label="На главную">
-              Домой
-            </a>
-          </li>
-          <li>
-            <a href="catalog.html">
-              Каталог
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Инструмент
-            </a>
-          </li>
-          <li>
-            <a>
-              Перфораторы
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="crumbs">
+        <li>
+          <a href="" aria-label="На главную">
+            Домой
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            Каталог
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Инструмент
+          </a>
+        </li>
+        <li>
+          <a>
+            Перфораторы
+          </a>
+        </li>
+      </ul>
       <div>
         <h2 class="hammer-drill">
           Перфораторы
@@ -497,7 +509,6 @@
         в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </p>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -508,7 +519,7 @@
       <address>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </address>
-      <ul>
+      <ul class="list-top">
         <li>
           <a href="#">
             Компания
@@ -535,7 +546,7 @@
           </a>
         </li>
       </ul>
-      <ul>
+      <ul class="list-bottom">
         <li>
           <a href="#">
             Материалы
@@ -604,7 +615,7 @@
     </div>
   </footer>
 
-  <section>
+  <section class="popup popup-cart">
     <!--Попап корзины-->
     <div>
       <h2>

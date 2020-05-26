@@ -8,6 +8,7 @@
   </title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,9 +16,9 @@
     <h1 class="visually-hidden">
       Техномарт - интернет-магазин строительных материалов и инструментов для ремонта.
     </h1>
-    <div class="header-upper-string">
+    <div class="header-logo-wraper">
       <img src="img/logo-technomart.svg" alt="Логотип техномарт" width="108" height="18">
-      <form action="https://echo.htmlacademy.ru/" method="get">
+      <form action="https://echo.htmlacademy.ru/" method="get" class="search">
         <button type="submit" aria-label="Поиск">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
             <path fill="#fff" fill-rule="evenodd" d="M13.5 12l3.5 3.6-1.4 1.4-3.6-3.5a7.5 7.5 0 01-12-6A7.5 7.5 0 1113.5 12zm-6-10a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" clip-rule="evenodd"/>
@@ -29,50 +30,52 @@
       </form>
       <ul>
         <li>
-          <a href="#">
+          <a href="#" class="icon-bookmark">
             Закладки:
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="icon-cart">
             Корзина:
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="checkout">
             Оформить заказ
           </a>
         </li>
       </ul>
     </div>
-    <div>
-      <p>
-        Интернет-магазин<br>
-        строительных материалов<br>
-        и инструментов для ремонта
-      </p>
-    </div>
-    <div>
-      <a href="tel://+78125550555">
-        +7 (812) 555-05-55
-      </a>
-      <address>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
-    </div>
-    <ul>
-      <li>
-        <a href="#">
-          Войти
+    <div class="header-main">
+      <div>
+        <p>
+          Интернет-магазин<br>
+          строительных материалов<br>
+          и инструментов для ремонта
+        </p>
+      </div>
+      <div class="header-contacts">
+        <a href="tel://+78125550555">
+          +7 (812) 555-05-55
         </a>
-      </li>
-      <li>
-        <a href="#">
-          Регистрация
-        </a>
-      </li>
-    </ul>
-    <ul class="menu">
+        <address>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+      </div>
+      <ul class="login">
+        <li>
+          <a href="#">
+            Войти
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Регистрация
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="header-nav">
       <li>
         <a href="#">
           Главная
@@ -111,11 +114,11 @@
     </ul>
   </header>
 
-  <main>
-    <section>
-      <!--Основной контент-->
+  <main class="main">
+    <section class="main-partitions">
+      <!--Разделы-->
       <ul>
-        <li class="materials">
+        <li class="partitions-first">
           <h3>
             Материалы
           </h3>
@@ -126,7 +129,7 @@
             Новинка
           </p>
         </li>
-        <li class="tools">
+        <li class="partitions-second">
           <h3>
             Инструменты
           </h3>
@@ -134,7 +137,7 @@
             На все случаи
           </a>
         </li>
-        <li class="equipment">
+        <li class="partitions-third">
           <h3>
             Техника
           </h3>
@@ -142,7 +145,7 @@
             Для стройки
           </a>
         </li>
-        <li class="sale50">
+        <li class="partitions-fourth">
           <h3>
             Скидки 50%
           </h3>
@@ -150,7 +153,7 @@
             На 350 товаров
           </a>
         </li>
-        <li class="shipping">
+        <li class="partitions-fifth">
           <h3>
             Доставка
           </h3>
@@ -159,7 +162,7 @@
           </a>
         </li>
       </ul>
-      <div>
+      <div class="partitions-slider">
         <!--Slider-->
         <div>
           <h2>
@@ -189,150 +192,154 @@
           Открыть каталог
         </a>
       </div>
-      <!--Slider-->
-      <div>
-        <h2>
-          Популярные товары:
-        </h2>
-        <a href="catalog.html">
-          Все популярные товары
-        </a>
-        <ul>
-          <li>
-            <img src="img/index/hammer-drill-1.png" alt="Перфоратор BOSCH" width="127" height="112">
-            <h4>
-              <a href="#">
-                Перфоратор BOSCH BFG 9000
-              </a>
-            </h4>
-            <span>
-              32500
-            </span>
-            <span>
-              22500
-            </span>
+    </section>
+    <section class="popular-goods">
+      <!--Популярные товары-->
+      <h2>
+        Популярные товары:
+      </h2>
+      <a href="catalog.html">
+        Все популярные товары
+      </a>
+      <ul>
+        <li>
+          <img src="img/index/hammer-drill-1.png" alt="Перфоратор BOSCH" width="127" height="112">
+          <h4>
             <a href="#">
-              Купить
+              Перфоратор BOSCH BFG 9000
             </a>
+          </h4>
+          <span>
+            32500
+          </span>
+          <span>
+            22500
+          </span>
+          <a href="#">
+            Купить
+          </a>
+          <a href="#">
+            В закладки
+          </a>
+        </li>
+        <li>
+          <img src="img/index/hammer-drill-2-4.png" alt="Перфоратор BOSCH" width="127" height="112">
+          <h4>
+            <a href="">
+              Перфоратор BOSCH BFG 3000
+            </a>
+          </h4>
+          <span>
+            22500
+          </span>
+          <span>
+            12500
+          </span>
+          <p>
+            Новинка
+          </p>
+          <a href="#">
+            Купить
+          </a>
+          <a href="#">
+            В закладки
+          </a>
+        </li>
+        <li>
+          <img src="img/index/hammer-drill-3.png" alt="Перфоратор BOSCH" width="127" height="112">
+          <h4>
             <a href="#">
-              В закладки
+              Перфоратор BOSCH BFG 6000
             </a>
-          </li>
-          <li>
-            <img src="img/index/hammer-drill-2-4.png" alt="Перфоратор BOSCH" width="127" height="112">
-            <h4>
-              <a href="">
-                Перфоратор BOSCH BFG 3000
-              </a>
-            </h4>
-            <span>
-              22500
-            </span>
-            <span>
-              12500
-            </span>
-            <p>
-              Новинка
-            </p>
+          </h4>
+          <span>
+            30500
+          </span>
+          <span>
+            25500
+          </span>
+          <a href="#">
+            Купить
+          </a>
+          <a href="#">
+            В закладки
+          </a>
+        </li>
+        <li>
+          <img src="img/index/hammer-drill-2-4.png" alt="Перфоратор BOSCH" width="127" height="112">
+          <h4>
             <a href="#">
-              Купить
+              Перфоратор BOSCH BFG 2000
             </a>
-            <a href="#">
-              В закладки
-            </a>
-          </li>
-          <li>
-            <img src="img/index/hammer-drill-3.png" alt="Перфоратор BOSCH" width="127" height="112">
-            <h4>
-              <a href="#">
-                Перфоратор BOSCH BFG 6000
-              </a>
-            </h4>
-            <span>
-              30500
-            </span>
-            <span>
-              25500
-            </span>
-            <a href="#">
-              Купить
-            </a>
-            <a href="#">
-              В закладки
-            </a>
-          </li>
-          <li>
-            <img src="img/index/hammer-drill-2-4.png" alt="Перфоратор BOSCH" width="127" height="112">
-            <h4>
-              <a href="#">
-                Перфоратор BOSCH BFG 2000
-              </a>
-            </h4>
-            <span>
-              12500
-            </span>
-            <p>
-              Новинка
-            </p>
-            <a href="#">
-              Купить
-            </a>
-            <a href="#">
-              В закладки
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h2>
-          Популярные производители:
-        </h2>
-        <a href="catalog.html">
-          Все производители
-        </a>
-        <ul>
-          <li>
-            <a href="#">
-              <img src="img/index/bosch.png" alt="Логотип Bosch" width="126" height="37">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/index/makita.png" alt="Логотип Makita" width="123" height="40">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/index/dewalt.png" alt="Логотип Dewalt" width="146" height="44">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/index/interskol.png" alt="Логотип Иинтерскол" width="200" height="88">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/index/hitachi.png" alt="Логотип Hitachi" width="169" height="31">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/index/lg.png" alt="Логотип Lg" width="121" height="73">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/index/aeg.png" alt="Логотип Aeg" width="151" height="96">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/index/metabo.png" alt="Логотип Metabo" width="204" height="69">
-            </a>
-          </li>
-        </ul>
-      </div>
+          </h4>
+          <span>
+            12500
+          </span>
+          <span class="visually-hidden">
+            22500
+          </span>
+          <p>
+            Новинка
+          </p>
+          <a href="#">
+            Купить
+          </a>
+          <a href="#">
+            В закладки
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <!--Популярные производители-->
+      <h2>
+        Популярные производители:
+      </h2>
+      <a href="catalog.html">
+        Все производители
+      </a>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/index/bosch.png" alt="Логотип Bosch" width="126" height="37">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/index/makita.png" alt="Логотип Makita" width="123" height="40">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/index/dewalt.png" alt="Логотип Dewalt" width="146" height="44">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/index/interskol.png" alt="Логотип Иинтерскол" width="200" height="88">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/index/hitachi.png" alt="Логотип Hitachi" width="169" height="31">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/index/lg.png" alt="Логотип Lg" width="121" height="73">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/index/aeg.png" alt="Логотип Aeg" width="151" height="96">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/index/metabo.png" alt="Логотип Metabo" width="204" height="69">
+          </a>
+        </li>
+      </ul>
     </section>
     <section class="services">
       <!--Сервисы-->
@@ -400,9 +407,9 @@
         </a>
       </div>
     </section>
-    <section>
-      <!--Контакты-->
-      <div>
+    <section class="main-info">
+      <!--Информация-->
+      <div class="main-company">
         <h2>
           Компания "Техномарт"
         </h2>
@@ -415,7 +422,7 @@
           Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:
         </p>
-        <ul>
+        <ul class="shipping-list">
           <li>
             Деловые линии
           </li>
@@ -430,7 +437,7 @@
           Подробнее о компании
         </a>
       </div>
-      <div>
+      <div class="main-contacts">
         <h2>
           Контакты
         </h2>
@@ -455,7 +462,7 @@
       <address>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </address>
-      <ul>
+      <ul class="list-top">
         <li>
           <a href="#">
             Компания
@@ -482,7 +489,7 @@
           </a>
         </li>
       </ul>
-      <ul>
+      <ul class="list-bottom">
         <li>
           <a href="#">
             Материалы
@@ -552,7 +559,7 @@
     </div>
   </footer>
 
-  <section>
+  <section class="popup popup-map">
     <!--Попап карты-->
     <h2 class="visually-hidden">
       Карта
@@ -569,7 +576,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="popup popup-feedback">
     <!--Попап обратной связи-->
     <form method="post" action="https://echo.htmlacademy.ru/" id="form-message" class="popup-bottom">
       <h2 class="visually-hidden">
