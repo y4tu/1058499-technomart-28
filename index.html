@@ -17,33 +17,37 @@
       Техномарт - интернет-магазин строительных материалов и инструментов для ремонта.
     </h1>
     <div class="header-top">
-      <a class="header-top-link logo-link">
-        <img src="img/logo-technomart.svg" alt="Логотип техномарт" class="logo-link-img" width="108" height="18">
-      </a>
+      <div class="header-top-logo">
+        <a class="header-top-logo-link">
+          <img src="img/logo-technomart.svg" alt="Логотип техномарт" class="logo-link-img" width="108" height="18">
+        </a>
+      </div>
       <form action="https://echo.htmlacademy.ru/" method="get" class="header-search">
         <button type="submit" class="header-search-button" aria-label="Поиск">
-          <svg xmlns="http://www.w3.org/2000/svg" class="header-search-svg" width="17" height="17" fill="none">
-            <path fill="none" fill-rule="evenodd" d="M13.5 12l3.5 3.6-1.4 1.4-3.6-3.5a7.5 7.5 0 01-12-6A7.5 7.5 0 1113.5 12zm-6-10a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" clip-rule="evenodd" class="header-search-path">
+          <svg xmlns="http://www.w3.org/2000/svg" class="header-search-icon" width="17" height="17">
+            <path fill-rule="evenodd" d="M13.5 12l3.5 3.6-1.4 1.4-3.6-3.5a7.5 7.5 0 01-12-6A7.5 7.5 0 1113.5 12zm-6-10a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" clip-rule="evenodd">
           </svg>
         </button>
         <label class="header-search-label">
           <input type="search" class="header-search-input" placeholder="Поиск:">
         </label>
       </form>
-      <ul class="user-controls">
-        <li class="user-controls-item">
-          <a href="#" class="user-controls-link icon-bookmark">
+      <ul class="header-user-controls">
+        <li class="header-user-controls-item">
+          <a href="#" class="header-user-controls-link icon-bookmark">
             Закладки:
           </a>
         </li>
-        <li class="user-controls-item">
-          <a href="#" class="user-controls-link icon-cart">
+        <li class="header-user-controls-item">
+          <a href="#" class="header-user-controls-link icon-cart">
             Корзина:
           </a>
         </li>
-        <li class="user-controls-item">
-          <a href="#" class="user-controls-link icon-checkout">
-            Оформить заказ
+        <li class="header-user-controls-item">
+          <a href="#" class="header-user-controls-link header-checkout">
+            <p class="header-checkout-text">
+              Оформить заказ
+            </p>
           </a>
         </li>
       </ul>
@@ -62,19 +66,19 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </address>
       </div>
-      <ul class="login-actions">
-        <li class="login-actions-item">
-          <a href="#" class="login-actions-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="none" class="login-actions-svg icon-login">
-              <path fill="none" d="M14.2 8.5L5.7 0v6H0v5h5.7v6l8.5-8.5z"/ class="login-actions-path">
-              <path fill="none" d="M16.2 15h-4.8v2h4.8c2 0 2.8-1.8 2.9-3V3c0-1.2-.8-3-3-3h-4.7v2h4.8c.8 0 1 .7 1 1v11c0 .3-.2 1-1 1z"/
-              class="login-actions-path">
+      <ul class="header-login-actions">
+        <li class="header-login-actions-item">
+          <a href="#" class="header-login-actions-link">
+            <svg xmlns="http://www.w3.org/2000/svg" class="header-login-actions-svg header-icon-login" width="20" height="17">
+              <path d="M14.2 8.5L5.7 0v6H0v5h5.7v6l8.5-8.5z" class="header-login-actions-path"/>
+              <path d="M16.2 15h-4.8v2h4.8c2 0 2.8-1.8 2.9-3V3c0-1.2-.8-3-3-3h-4.7v2h4.8c.8 0 1 .7 1 1v11c0 .3-.2 1-1 1z"
+              class="header-login-actions-path"/>
             </svg>
             Войти
           </a>
         </li>
-        <li class="login-actions-item">
-          <a href="#" class="login-actions-link">
+        <li class="header-login-actions-item">
+          <a href="#" class="header-login-actions-link">
             Регистрация
           </a>
         </li>
@@ -130,9 +134,8 @@
           <a href="#" class="offers-link">
             На любой вкус
           </a>
-          <p class="offers-item-new">
-            Новинка
-          </p>
+          <div class="offers-item-new">
+          </div>
         </li>
         <li class="offers-item offers-item-blue">
           <h3 class="offers-item-subtitle">
@@ -240,9 +243,9 @@
           <span class="popular-goods-sale">
             12500
           </span>
-          <p class="popular-goods-new">
+          <div class="popular-goods-new">
             Новинка
-          </p>
+          </div>
           <a href="#" class="popular-goods-buy-link">
             Купить
           </a>
@@ -283,9 +286,9 @@
           <span  class="popular-goods-sale">
             12500
           </span>
-          <p>
+          <div class="popular-goods-new">
             Новинка
-          </p>
+          </div>
           <a href="#" class="popular-goods-buy-link">
             Купить
           </a>
@@ -413,15 +416,15 @@
     <section class="info">
       <!--Информация-->
       <div class="company">
-        <h2 class="company-heading">
+        <h2 class="info-heading company-heading">
           Компания "Техномарт"
         </h2>
-        <p class="company-text">
+        <p class="info-text company-text">
           Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для
           ремонта и строительства не оставит равнодушными любителей сэкономить на
           гастарбайтерах.
         </p>
-        <p class="company-text">
+        <p class="info-text company-text">
           Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:
         </p>
@@ -436,21 +439,21 @@
             ЖелДорЭкспедиция
           </li>
         </ul>
-        <a href="#" class="company-info-link">
+        <a href="#" class="info-link company-info-link">
           Подробнее о компании
         </a>
       </div>
       <div class="contacts">
-        <h2 class="contacts-heading">
+        <h2 class="info-heading contacts-heading">
           Контакты
         </h2>
-        <p class="contacts-text">
+        <p class="info-text contacts-text">
           Вы можете забрать товар сами, заехав в наш офис:
         </p>
         <a href="#" class="contacts-minimap-link">
           <img src="img/index/mini-map.jpg" class="contacts-minimap-img" alt="Миникарта" width="300" height="158">
         </a>
-        <a href="#" class="contacts-link">
+        <a href="#" class="info-link contacts-link">
           Заблудились? Напишите нам!
         </a>
       </div>
@@ -462,9 +465,14 @@
       <a href="#" class="footer-nav-logo">
         <img src="img/logo-technomart.svg" alt="Логотип техномарт" width="138" height="23" class="footer-nav-logo-img">
       </a>
-      <address class="footer-nav-address">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
+      <div class="footer-nav-contacts">
+        <address class="footer-nav-address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+        <a href="tel://+78125550555" class="footer-nav-white-link footer-nav-tel">
+          +7 (812) 555-05-55
+        </a>
+      </div>
       <ul class="footer-nav-white">
         <li class="footer-nav-white-item">
           <a href="#" class="footer-nav-white-link">
