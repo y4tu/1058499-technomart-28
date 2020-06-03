@@ -17,7 +17,7 @@
       Техномарт - интернет-магазин строительных материалов и инструментов для ремонта.
     </h1>
     <div class="header-top">
-      <div class="wrapper">
+      <div class="wrapper header-top-wrapper">
         <div class="header-top-logo">
           <a class="header-top-logo-link">
             <img src="img/logo-technomart.svg" alt="Логотип техномарт" class="logo-link-img" width="108" height="18">
@@ -52,7 +52,7 @@
         </ul>
       </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper header-main-wrapper">
       <div class="header-main">
         <p class="header-main-text">
           Интернет-магазин<br>
@@ -69,11 +69,11 @@
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </address>
         </div>
-        <div class="user-actions-wrapper">
+        <div class="header-user-actions-wrapper">
           <ul class="header-user-actions">
             <li class="header-user-actions-item action-user-item">
               <a href="#" class="header-user-actions-link action-username-link" aria-label="Личный кабинет">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="#C5C5C5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="#C5C5C5" class="action-username-img">
                   <path d="M17.9 14.2a22 22 0 01-5.2-2.4c-.7-.5-.8-1.6-.5-2.4A5.5 5.5 0 0014 5C14 2.3 12.2 0 10 0S6 2.3 6 5c0 1.9.7 3.5 1.8 4.4.3.8.2 1.9-.5 2.4-1 .7-3 1.6-5.2 2.4C0 14.9 0 18 0 18h20s0-3.1-2.1-3.8z"/>
                 </svg>
                 Равшан Джамшутович
@@ -81,7 +81,7 @@
             </li>
             <li class="header-user-actions-item action-logout-item">
               <a href="#" class="header-user-actions-link action-logout-link" aria-label="Выход">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="#C5C5C5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" fill="#C5C5C5" class="action-logout-img">
                   <path d="M20 8.5L11.1 0v6h-6v5h6v6L20 8.5z"/>
                   <path d="M2.1 14V3c0-.3.2-1 1-1h5V0h-5C1 0 .1 1.8.1 3v11c0 1.2.8 3 3 3h5v-2h-5c-.8 0-1-.7-1-1z"/>
                 </svg>
@@ -528,74 +528,78 @@
   </main>
 
   <footer class="footer">
-      <div class="footer-nav">
-        <div class="wrapper footer-nav-wrapper">
-        <a href="#" class="footer-nav-logo">
-          <img src="img/logo-technomart.svg" alt="Логотип техномарт" width="138" height="23" class="footer-nav-logo-img">
-        </a>
-        <div class="footer-nav-contacts">
-          <address class="footer-nav-address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </address>
-          <a href="tel://+78125550555" class="footer-nav-white-link footer-nav-tel">
-            +7 (812) 555-05-55
+    <div class="footer-nav">
+      <div class="wrapper footer-nav-wrapper">
+        <div class="footer-nav-up">
+          <a href="#" class="footer-nav-logo">
+            <img src="img/logo-technomart.svg" alt="Логотип техномарт" width="138" height="23" class="footer-nav-logo-img">
           </a>
+          <ul class="footer-nav-list white-list">
+            <li class="footer-nav-list-item white-item">
+              <a href="#" class="footer-nav-list-link white-link">
+                Компания
+              </a>
+            </li>
+            <li class="footer-nav-list-item white-item">
+              <a href="#" class="footer-nav-list-link white-link">
+                Новости
+              </a>
+            </li>
+            <li class="footer-nav-list-item white-item">
+              <a href="catalog.html" class="footer-nav-list-link white-link">
+                Каталог
+              </a>
+            </li>
+            <li class="footer-nav-list-item white-item">
+              <a href="#" class="footer-nav-list-link white-link">
+                Доставка
+              </a>
+            </li>
+            <li class="footer-nav-list-item white-item">
+              <a href="#" class="footer-nav-list-link white-link">
+                Контакты
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="footer-nav-white">
-          <li class="footer-nav-white-item">
-            <a href="#" class="footer-nav-white-link">
-              Компания
+        <div class="footer-nav-down">
+          <div class="footer-nav-contacts">
+            <address class="footer-nav-address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </address>
+            <a href="tel://+78125550555" class="footer-nav-tel">
+              +7 (812) 555-05-55
             </a>
-          </li>
-          <li class="footer-nav-white-item">
-            <a href="#" class="footer-nav-white-link">
-              Новости
-            </a>
-          </li>
-          <li class="footer-nav-white-item">
-            <a href="catalog.html" class="footer-nav-white-link">
-              Каталог
-            </a>
-          </li>
-          <li class="footer-nav-white-item">
-            <a href="#" class="footer-nav-white-link">
-              Доставка
-            </a>
-          </li>
-          <li class="footer-nav-white-item">
-            <a href="#" class="footer-nav-white-link">
-              Контакты
-            </a>
-          </li>
-        </ul>
-        <ul class="footer-nav-yellow">
-          <li class="footer-nav-yellow-item">
-            <a href="#" class="footer-nav-yellow-link">
-              Материалы
-            </a>
-          </li>
-          <li class="footer-nav-yellow-item">
-            <a href="#" class="footer-nav-yellow-link">
-              Техника
-            </a>
-          </li>
-          <li class="footer-nav-yellow-item">
-            <a href="#" class="footer-nav-yellow-link">
-              Инструмент
-            </a>
-          </li>
-          <li class="footer-nav-yellow-item">
-            <a href="#" class="footer-nav-yellow-link">
-              Спецпредложения
-            </a>
-          </li>
-        </ul>
+          </div>
+          <ul class="footer-nav-list yellow-list">
+            <li class="footer-nav-list-item yellow-item">
+              <a href="#" class="footer-nav-list-link yellow-link">
+                Материалы
+              </a>
+            </li>
+            <li class="footer-nav-list-item yellow-item">
+              <a href="#" class="footer-nav-list-link yellow-link">
+                Техника
+              </a>
+            </li>
+            <li class="footer-nav-list-item yellow-item">
+              <a href="#" class="footer-nav-list-link yellow-link">
+                Инструмент
+              </a>
+            </li>
+            <li class="footer-nav-list-item yellow-item">
+              <a href="#" class="footer-nav-list-link yellow-link">
+                Спецпредложения
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-      <div class="footer-links">
-        <div class="wrapper footer-links-wrapper">
+    <div class="footer-links">
+      <div class="wrapper footer-links-wrapper">
         <p class="footer-links-copyright">
-          © 2010–2019 Компания "Техномарт"<br>
+          © 2010–2019 Компания «Техномарт»<br>
           Все права защищены
         </p>
         <ul class="footer-links-socials">
@@ -632,7 +636,7 @@
           </a>
         </p>
         <p class="footer-links-developer">
-          Разработано-
+          Разработано —
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-links-developer-link">
             htmlacademy.ru
           </a>
