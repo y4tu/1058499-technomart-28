@@ -27,6 +27,7 @@
   --basic-greendark: #63A63E;
   --map-background: #F4F2EC;
   --slider-background: #6D6864;
+  --basic-socials: #212A3A;
 }
 
 /*Visually hidden*/
@@ -93,6 +94,7 @@ img {
 /*Header*/
 
 .header {
+  padding-bottom: 60px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -102,7 +104,6 @@ img {
 
 .header-top {
   width: 100%;
-  margin-bottom: 44px;
   background-color: var(--basic-graydark);
 }
 
@@ -114,6 +115,7 @@ img {
   margin-bottom: -5px;
   background: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
 }
 
 .header-top-logo-link {
@@ -170,6 +172,7 @@ color: var(--black);
   border-style: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .header-search-icon {
@@ -235,6 +238,11 @@ color: var(--black);
 
 .header-user-controls-item {
 position: relative;
+margin-right: 15px;
+}
+
+.header-user-controls-item:last-child {
+  margin-right: 0;
 }
 
 .header-user-controls-link {
@@ -246,8 +254,9 @@ position: relative;
 }
 
 .icon-bookmark {
-  padding-left: 23px;
-  padding-right: 59px;
+  outline: none;
+  padding-left: 43px;
+  padding-right: 24px;
 }
 
 .icon-bookmark::before {
@@ -258,13 +267,14 @@ position: relative;
   display: inline-block;
   opacity: 0.3;
   position: absolute;
-  left: 0px;
+  left: 20px;
   top: 13px;
 }
 
 .icon-cart {
-  padding-left: 28px;
-  padding-right: 41px;
+  outline: none;
+  padding-left: 49px;
+  padding-right: 26px;
 }
 
 .icon-cart::before {
@@ -275,7 +285,7 @@ position: relative;
   display: inline-block;
   opacity: 0.3;
   position: absolute;
-  left: 5px;
+  left: 26px;
   top: 13px;
 }
 
@@ -286,7 +296,19 @@ position: relative;
   opacity: 1;
 }
 
+.icon-bookmark:active::before,
+.icon-cart:active::before {
+  opacity: 0.3;
+}
+
+.icon-bookmark:active,
+.icon-cart:active {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
+}
+
 .header-checkout {
+  outline: none;
   display: block;
   margin: 0;
   padding: 0;
@@ -294,10 +316,21 @@ position: relative;
   padding-right: 16px;
   padding-top: 9px;
   padding-bottom: 9px;
+  background-color: var(--basic-green);
+}
+
+.header-checkout:hover,
+.header-checkout:focus {
   background-color: var(--success);
 }
 
+.header-checkout:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--basic-green);
+}
+
 .header-main-wrapper {
+  padding-top: 44px;
   padding-bottom: 40px;
 }
 
@@ -305,6 +338,10 @@ position: relative;
   width: 100%;
   display: flex;
   position: relative;
+}
+
+.header-main-link {
+  outline: none;
 }
 
 .header-main-text {
@@ -389,7 +426,6 @@ position: relative;
   padding-bottom: 12px;
 }
 
-
 .action-register-item {
 margin-left: 10px;
 }
@@ -401,6 +437,41 @@ margin-left: 10px;
   padding-right: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.action-login-link:hover,
+.action-login-link:focus,
+.action-register-link:hover,
+.action-register-link:focus,
+.header-order-actions-link:hover,
+.header-order-actions-link:focus {
+  color: var(--basic-red);
+}
+
+.header-order-actions-link:hover::before,
+.header-order-actions-link:focus::before {
+  background-color: var(--basic-red);
+}
+
+.action-login-link:hover .header-icon-login,
+.action-login-link:focus .header-icon-login,
+.action-username-link:hover .action-username-img,
+.action-username-link:focus .action-username-img,
+.action-logout-link:hover .action-logout-img,
+.action-logout-link:focus .action-logout-img {
+  fill: var(--basic-gray);
+}
+
+.action-login-link:active,
+.action-register-link:active,
+.action-username-link:active {
+  color: var(--basic-graylight);
+}
+
+.action-login-link:active .header-icon-login,
+.action-username-link:active .action-username-img,
+.action-logout-link:active .action-logout-img {
+  fill: var(--basic-graylight);
 }
 
 .header-user-actions-wrapper {
@@ -481,10 +552,11 @@ margin-left: 10px;
 
 .my-userspace-link::before {
   content: "";
-  background-image: url(../img/catalog/point.svg);
+  background-color: var(--background-gray);
   background-repeat: no-repeat;
-  width: 6px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
   display: inline-block;
   position: absolute;
   top: 7px;
@@ -496,6 +568,7 @@ margin-left: 10px;
 }
 
 .header-login-actions-link {
+  outline: none;
   position: relative;
   display: block;
   background-color: var(--white);
@@ -503,10 +576,15 @@ margin-left: 10px;
 }
 
 .header-user-actions-link {
+  outline: none;
   position: relative;
   display: block;
   background-color: var(--white);
   color: var(--black);
+}
+
+.header-order-actions-link {
+  outline: none;
 }
 
 .header-icon-login {
@@ -520,31 +598,42 @@ margin-left: 10px;
 }
 
 .header-nav-wrapper {
-  margin-bottom: 60px;
+
 }
 
 .header-nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 52px;
-  padding-right: 47px;
+  padding-left: 24px;
+  padding-right: 19px;
   background-color: var(--background-gray);
   box-shadow: inset 0px -5px 0px var(--basic-graydark);
   display: flex;
   justify-content: space-between;
 }
 
-.header-nav-item {
-
-}
-
 .header-nav-link {
+  outline: none;
   display: block;
   margin: 0;
   padding-top: 16px;
   padding-bottom: 20px;
   color: inherit;
+}
+
+.header-nav-link {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  background-color: var(--basic-graydark);
+}
+
+.header-nav-link:active {
+  color: var(--basic-graylight);
 }
 
 /*Main*/
@@ -1206,6 +1295,7 @@ width: 100%;
   background-color: var(--basic-graydark);
   font-size: 16px;
   line-height: 18px;
+  padding-bottom: 29px;
 }
 
 .footer-nav-up {
@@ -1308,7 +1398,39 @@ width: 100%;
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-around;
   width: 134px;
+}
+
+.footer-links-socials-link {
+  background-color: var(--basic-socials);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vk {
+  background-image: url(../img/icon-vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 15px;
+}
+
+.facebook {
+  background-image: url(../img/icon-fb.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 22px;
+}
+
+.instagram {
+  background-image: url(../img/icon-insta.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px;
 }
 
 .footer-links-feedback {
