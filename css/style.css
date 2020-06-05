@@ -28,6 +28,10 @@
   --map-background: #F4F2EC;
   --slider-background: #6D6864;
   --basic-socials: #212A3A;
+  --white-a03: rgba(255, 255, 255, 0.3);
+  --special-gray: #A9A9A9;
+  --special-gray-a03: rgba(169, 169, 169, 0.3);
+  --basic-graylight-a03: rgba(197, 197, 197, 0.3);
 }
 
 /*Visually hidden*/
@@ -94,6 +98,7 @@ img {
 /*Header*/
 
 .header {
+  margin-bottom: 59px;
   padding-bottom: 60px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -642,89 +647,201 @@ margin-left: 10px;
 
 }
 
-.offers-wrapper {
-
+.offers {
+  margin-bottom: 59px;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .offers-list {
+  padding: 0;
+  margin: 0;
   width: 100%;
-  max-height: 409px;
   display: grid;
   grid-template-areas:
   "item1 item2 item3"
   "slider slider item4"
   "slider slider item5";
   grid-gap: 20px;
-  padding: 0;
-  margin: 0;
   list-style: none;
-  margin-top: 59px;
-    }
+}
+
+.offers-item {
+  width: 300px;
+  position: relative;
+}
+
+.offers-item-subtitle {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 73px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.offers-link {
+  outline: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  padding-right: 23px;
+  min-width: 135px;
+  background-color: var(--white-a03);
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 22px;
+  bottom: 21px;
+}
+
+.offers-link:hover,
+.offers-link:focus {
+  background-color: var(--basic-graylight-a03);
+
+}
+
+.offers-link:active {
+  background-color: var(--special-gray-a03);
+}
+
+.offers-link-text {
+  display: block;
+  color: var(--white);
+  opacity: 1;
+}
 
 .offers-item-basic-yellow {
   grid-area: item1;
-  width: 300px;
-  height: min-content;
-  min-height: 123px;
+  display: block;
   background-color: var(--basic-yellow);
+  background-image: url(../img/catalog-new.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.offers-item-basic-yellow::after {
+  content: "";
+  background-image: url(../img/index/paint-bucket.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+  height: 65px;
+  position: absolute;
+  top: 31px;
+  right: 43px;
 }
 
 .offers-item-blue {
   grid-area: item2;
-  width: 300px;
-  height: min-content;
-  min-height: 123px;
+  display: block;
   background-color: var(--special-blue);
+}
+
+.offers-item-blue::after {
+  content: "";
+  background-image: url(../img/index/tools.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 75px;
+  height: 61px;
+  position: absolute;
+  top: 34px;
+  right: 31px;
 }
 
 .offers-item-pink {
   grid-area: item3;
-  width: 300px;
-  height: min-content;
-  min-height: 123px;
+  display: block;
   background-color: var(--special-lilac);
+}
+
+.offers-item-pink::after {
+  content: "";
+  background-image: url(../img/index/tractor.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 78px;
+  height: 62px;
+  position: absolute;
+  top: 31px;
+  right: 31px;
 }
 
 .offers-item-green {
   grid-area: item4;
-  width: 300px;
-  height: min-content;
-  min-height: 123px;
+  display: block;
   background-color: var(--special-greenlight);
+}
+
+.offers-item-green::after {
+  content: "";
+  background-image: url(../img/index/cart-big.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 59px;
+  height: 72px;
+  position: absolute;
+  top: 26px;
+  right: 45px;
 }
 
 .offers-item-special-yellow {
   grid-area: item5;
-  width: 300px;
-  height: min-content;
-  min-height: 123px;
+  display: block;
   background-color: var(--special-yellow);
-  position: relative;
-  bottom: 296px;
+}
+
+.offers-item-special-yellow::after {
+  content: "";
+  background-image: url(../img/index/truck.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 78px;
+  height: 63px;
+  position: absolute;
+  top: 32px;
+  right: 31px;
 }
 
 .offers-item-slider {
   width: 620px;
-  height: min-content;
-  min-height: 266px;
-  display: block;
   grid-area: slider;
+  display: block;
+  position: relative;
 }
 
 .offers-slider-heading {
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+  color: var(--white);
   display: block;
-  position: relative;
+  position: absolute;
+  top: 23px;
+  left: 24px;
+  z-index: 1;
 }
 
 .offers-slider-text {
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  color: var(--white);
   display: block;
-  position: relative;
+  position: absolute;
+  top: 64px;
+  left: 24px;
+  z-index: 1;
 }
 
 .offers-slider-img {
@@ -733,10 +850,8 @@ margin-left: 10px;
 
 .offers-slider-hammer {
   width: 100%;
-  height: 266px;
   display: block;
-  position: relative;
-  bottom: 30px;
+  position: absolute;
 }
 
 .offers-slider-hammer-heading {
@@ -749,17 +864,14 @@ margin-left: 10px;
 
 .offers-slider-hammer-img {
   display: block;
-  position: relative;
-  bottom: 108px;
+  position: absolute;
   background-color: var(--slider-background);
 }
 
 .offers-slider-drill {
   width: 100%;
-  height: 266px;
   display: block;
-  position: relative;
-  bottom: 326px;
+  position: absolute;
 }
 
 .offers-slider-drill-heading {
@@ -771,27 +883,55 @@ margin-left: 10px;
 
 .offers-slider-drill-img {
   display: block;
-  position: relative;
-  bottom: 108px;
+  position: absolute;
 }
 
 .offers-slider-controls {
-  height: 266px;
-  display: block;
-  position: relative;
-  bottom: 592px;
+
 }
 
 .offers-slider-controls-next {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 122px;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/index/icon-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .offers-slider-controls-prev {
+  display: block;
+  position: absolute;
+  left: 24px;
+  top: 122px;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/index/icon-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .offers-slider-catalog-link {
   display: block;
-  width: 192px;
-  height: 38px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 46px;
+  padding-right: 46px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--white);
+  position: absolute;
+  left: 24px;
+  bottom: 27px;
+  }
+
+  .offers-slider-catalog-link:active {
+    background-color: var(--error);
   }
 
   /* Popular goods */
