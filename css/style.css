@@ -50,11 +50,11 @@
 /*Global*/
 
 *, *::before, *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
   }
 
   .content-box-component {
-    box-sizing: content-box;
+  box-sizing: content-box;
   }
 
 html {
@@ -93,12 +93,11 @@ img {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-    }
+}
 
 /*Header*/
 
 .header {
-  margin-bottom: 59px;
   padding-bottom: 60px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -136,6 +135,7 @@ img {
 .header-top-logo:active {
   background: var(--error);
 }
+
 .logo-link-img {
   width: 100%;
 }
@@ -217,13 +217,13 @@ color: var(--black);
   border-style: none;
   color: var(--white);
 }
-/*  */
+
 .header-search-input::placeholder {
   padding-left: 2px;
   color: var(--white);
   opacity: 1;
 }
-/*  */
+
 .header-search-input:focus {
   color: var(--black);
 }
@@ -242,8 +242,8 @@ color: var(--black);
 }
 
 .header-user-controls-item {
-position: relative;
-margin-right: 15px;
+  position: relative;
+  margin-right: 15px;
 }
 
 .header-user-controls-item:last-child {
@@ -342,6 +342,7 @@ margin-right: 15px;
 .header-main {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -351,8 +352,8 @@ margin-right: 15px;
 
 .header-main-text {
   margin: 0;
+  margin-right: 91px;
   padding: 0;
-  padding-left: 30px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
@@ -361,8 +362,8 @@ margin-right: 15px;
 
 .header-main-contacts {
   margin: 0;
+  margin-right: 67px;
   padding: 0;
-  padding-left: 91px;
   display: flex;
   flex-direction: column;
 }
@@ -412,9 +413,7 @@ margin-right: 15px;
 .header-login-actions {
   position: relative;
   margin: 0;
-  margin-left: auto;
   padding: 0;
-  padding-left: 67px;
   list-style: none;
   display: flex;
   font-size: 21px;
@@ -432,7 +431,7 @@ margin-right: 15px;
 }
 
 .action-register-item {
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 .action-register-link {
@@ -482,7 +481,7 @@ margin-left: 10px;
 .header-user-actions-wrapper {
   display: flex;
   flex-direction: column;
-  padding-left: 49px;
+  margin-left: -18px;
 }
 
 .header-user-actions {
@@ -493,10 +492,6 @@ margin-left: 10px;
   display: flex;
   font-size: 21px;
   line-height: 21px;
-}
-
-.header-user-actions-item {
-
 }
 
 .action-username-link {
@@ -515,24 +510,11 @@ margin-left: 10px;
   left: 15px;
 }
 
-.action-user-item {
-
-}
-
 .action-logout-link {
   padding-left: 10px;
   padding-right: 17px;
   padding-top: 14px;
   padding-bottom: 10px;
-}
-}
-
-..action-logout-img {
-
-}
-
-.action-logout-item {
-
 }
 
 .my-order-userspace-wrapper {
@@ -547,12 +529,10 @@ margin-left: 10px;
   justify-content: space-between;
 }
 
-.my-orders-link {
-
-}
-
-.my-userspace-link {
+.header-order-actions-link {
   position: relative;
+  outline: none;
+  color: var(--background-gray);
 }
 
 .my-userspace-link::before {
@@ -566,10 +546,6 @@ margin-left: 10px;
   position: absolute;
   top: 7px;
   left: -18px;
-}
-
-.header-login-actions-item {
-
 }
 
 .header-login-actions-link {
@@ -588,10 +564,6 @@ margin-left: 10px;
   color: var(--black);
 }
 
-.header-order-actions-link {
-  outline: none;
-}
-
 .header-icon-login {
   position: absolute;
   top: 14px;
@@ -600,10 +572,6 @@ margin-left: 10px;
   height: 17px;
   fill: var(--basic-graylight);
   vertical-align: middle;
-}
-
-.header-nav-wrapper {
-
 }
 
 .header-nav {
@@ -643,12 +611,25 @@ margin-left: 10px;
 
 /*Main*/
 
-.main {
-
+.red-button-link {
+  display: block;
+  min-width: 192px;
+  max-width: 300px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 23px;
+  padding-right: 23px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--basic-red);
+  color: var(--white);
 }
 
 .offers {
   margin-bottom: 59px;
+  padding-top: 59px;
   font-family: "Cuprum", Arial, sans-serif;
 }
 
@@ -854,14 +835,6 @@ margin-left: 10px;
   position: absolute;
 }
 
-.offers-slider-hammer-heading {
-
-}
-
-.offers-slider-hammer-text {
-
-}
-
 .offers-slider-hammer-img {
   display: block;
   position: absolute;
@@ -874,20 +847,9 @@ margin-left: 10px;
   position: absolute;
 }
 
-.offers-slider-drill-heading {
-}
-
-.offers-slider-drill-text {
-
-}
-
 .offers-slider-drill-img {
   display: block;
   position: absolute;
-}
-
-.offers-slider-controls {
-
 }
 
 .offers-slider-controls-next {
@@ -915,16 +877,6 @@ margin-left: 10px;
 }
 
 .offers-slider-catalog-link {
-  display: block;
-  padding-top: 11px;
-  padding-bottom: 9px;
-  padding-left: 46px;
-  padding-right: 46px;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: var(--basic-red);
-  color: var(--white);
   position: absolute;
   left: 24px;
   bottom: 27px;
@@ -1011,10 +963,6 @@ margin-left: 10px;
   text-transform: uppercase;
 }
 
-.services-preview-text {
-
-}
-
 .services-list {
   width: 240px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1066,7 +1014,6 @@ margin-left: 10px;
   display: block;
   position: relative;
   right: 162px;
-
 }
 
 .services-description-img-shipping::before {
@@ -1080,7 +1027,7 @@ margin-left: 10px;
 }
 
 .container-shipping {
-width: 100%;
+  width: 100%;
 }
 
 .services-description-img-warranty {
@@ -1129,20 +1076,49 @@ width: 100%;
 
 /*Info*/
 
+.info {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.company-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.company {
+  margin-right: 162px;
+}
+
 .info-heading {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
   color: var(--black);
 }
 
 .company-shipping {
+  outline: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   list-style: none;
-  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+}
+
+.company-shipping-item {
+  margin-bottom: 12px;
+}
+
+.company-shipping-item:last-child {
+  margin-bottom: 0;
 }
 
 .company-shipping-item::before {
@@ -1155,7 +1131,21 @@ width: 100%;
   vertical-align: middle;
 }
 
+.company-text {
+  margin: 0;
+  max-width: 478px;
+}
+
+.company-text-top {
+  margin-bottom: 25px;
+}
+
+.contacts-text {
+  margin-bottom: 32px;
+}
+
 .info-link {
+  min-width: 220px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1168,9 +1158,9 @@ width: 100%;
   height: 38px;
 }
 
-.contacts-link {
-  width: 245px;
-  height: 38px;
+.contacts-minimap-link {
+  display: block;
+  margin-bottom: 17px;
 }
 
 /**Catalog.html**/
