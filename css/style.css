@@ -665,6 +665,7 @@ color: var(--black);
 }
 
 .offers-item-subtitle {
+  max-width: 141px;
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -810,7 +811,18 @@ color: var(--black);
   position: relative;
 }
 
+.offers-slider-words {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 .offers-slider-heading {
+  max-width: 276px;
   margin: 0;
   font-family: var(--basic-font-heading);
   font-weight: bold;
@@ -819,23 +831,23 @@ color: var(--black);
   text-transform: uppercase;
   color: var(--white);
   display: block;
-  position: absolute;
-  top: 23px;
-  left: 24px;
   z-index: 1;
+  padding-top: 23px;
+  padding-left: 24px;
 }
 
 .offers-slider-text {
+  max-width: 300px;
   margin: 0;
   font-family: var(--basic-font-heading);
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
   display: block;
-  position: absolute;
-  top: 64px;
-  left: 24px;
   z-index: 1;
+  padding-top: 6px;
+  padding-bottom: 16px;
+  padding-left: 24px;
 }
 
 .offers-slider-img {
@@ -1175,22 +1187,23 @@ color: var(--black);
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
 
-.services-list-item:hover,
-.services-list-item:focus {
-  background-color: var(--basic-graydark);
-}
-
-.services-list-item-active {
-  background-color: var(--white);
-  box-shadow: none;
-}
-
 .services-list-link {
   display: block;
   padding-top: 15px;
   padding-bottom: 17px;
   padding-left: 22px;
   color: var(--white);
+}
+
+.services-list-link:hover,
+.services-list-link:focus {
+  background-color: var(--basic-graydark);
+  color: var(--white);
+}
+
+.services-list-link-active {
+  background-color: var(--white);
+  box-shadow: none;
 }
 
 .services-list-link-active {
@@ -1275,6 +1288,7 @@ color: var(--black);
 }
 
 .services-description-text {
+  max-width: 410px;
   margin: 0;
 }
 
@@ -1388,16 +1402,25 @@ color: var(--black);
   vertical-align: middle;
 }
 
+.company-heading {
+  max-width: 500px;
+}
+
 .company-text {
   margin: 0;
-  max-width: 478px;
+  max-width: 500px;
 }
 
 .company-text-top {
   margin-bottom: 25px;
 }
 
+.contacts-heading {
+  max-width: 300px;
+}
+
 .contacts-text {
+  max-width: 300px;
   margin-bottom: 32px;
 }
 
