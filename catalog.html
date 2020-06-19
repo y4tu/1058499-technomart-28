@@ -19,7 +19,7 @@
     <div class="header-top">
       <div class="wrapper header-top-wrapper">
         <div class="header-top-logo">
-          <a class="header-top-logo-link">
+          <a href="./index.html" class="header-top-logo-link">
             <img src="img/logo-technomart.svg" alt="Логотип техномарт" class="logo-link-img" width="108" height="18">
           </a>
         </div>
@@ -112,7 +112,7 @@
     <div class="wrapper header-nav-wrapper">
       <ul class="header-nav">
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">
+          <a href="./index.html" class="header-nav-link">
             Главная
           </a>
         </li>
@@ -154,7 +154,7 @@
     <section class="catalog"><!--Каталог-->
       <div class="wrapper catalog-wrapper">
         <ul class="catalog-breadcrumbs">
-          <li class="catalog-breadcrumbs-item-home">
+          <li class="catalog-breadcrumbs-item catalog-breadcrumbs-item-home">
             <a href="./index.html" class="catalog-breadcrumbs-link-home catalog-breadcrumbs-link" aria-label="На главную">
             </a>
           </li>
@@ -174,7 +174,7 @@
             </a>
           </li>
         </ul>
-        <h2 class="catalog-filter-heading">
+        <h2 class="product-group-heading">
           <span>
             Перфораторы
           </span>
@@ -182,79 +182,85 @@
         <div class="catalog-container">
           <div class="catalog-filter">
             <form method="get" action="https://echo.htmlacademy.ru/" class="catalog-filter-form">
-              <h2 class="catalog-filter-form-subtitle">
+              <h2 class="filter-heading">
                 Фильтр:
               </h2>
-              <fieldset class="catalog-filter-form-price">
-                <legend class="catalog-filter-form-price-subtitle">
+              <fieldset class="catalog-filter-form-price filter-form-item">
+                <legend class="catalog-filter-form-price-subtitle filter-form-subtitle">
                   Цена:
                 </legend>
-                <div class="catalog-filter-form-price-range">
-                  <label for="price-range" class="catalog-filter-form-label"></label>
-                  <input name="price" type="range" class="catalog-filter-form-input" id="price-range">
+                <div class="filter-price-range">
+                  <div class="scale">
+                    <div class="bar" style="width: 75%; margin-left: 8%;">
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 8%">
+                  </div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 73%">
+                  </div>
                 </div>
-                <div class="catalog-filter-form-price-min_price">
-                  <label for="min-price" class="catalog-filter-form-price-label"></label>
-                  <input name="min-price" type="number" class="catalog-filter-form-price-input" id="min-price" placeholder="0">
-                </div>
-                <span>-</span>
-                <div class="catalog-filter-form-price-max_price">
-                  <label for="max-price" class="catalog-filter-form-price-label"></label>
-                  <input name="max-price" type="number" class="catalog-filter-form-price-input" id="max-price" placeholder="30000">
+                <div class="price-wrapper">
+                  <label class="price-label filter-min_price">
+                    <input name="min-price" type="number" class="price-input" id="min-price" value="0">
+                  </label>
+                  <span class="dash">-</span>
+                  <label class="price-label filter-max_price">
+                    <input name="max-price" type="number" class="price-input" id="max-price" value="30000">
+                  </label>
                 </div>
               </fieldset>
-              <fieldset class="catalog-filter-form-manufacturers">
-                <legend class="catalog-filter-form-manufacturers-subtitle">
+              <fieldset class="filter-manufacturers filter-form-item">
+                <legend class="filter-manufacturers-subtitle filter-form-subtitle">
                   Производители:
                 </legend>
-                <ul class="catalog-filter-form-manufacturers-list">
-                  <li class="catalog-filter-form-manufacturers-item">
-                    <input name="bosch" type="checkbox" class="catalog-filter-form-manufacturers-input" id="filter-bosch" checked>
-                    <label for="filter-bosch" class="catalog-filter-form-manufacturers-label">
+                <ul class="filter-list filter-manufacturers-list">
+                  <li class="filter-manufacturers-item filter-item">
+                    <input name="bosch" type="checkbox" class="filter-checkbox" id="filter-bosch" checked>
+                    <label for="filter-bosch" class="filter-checkbox-label">
                       Bosch
                     </label>
                   </li>
-                  <li class="catalog-filter-form-manufacturers-item">
-                    <input name="interskol" type="checkbox" class="catalog-filter-form-manufacturers-input" id="filter-interskol">
-                    <label for="filter-interskol" class="catalog-filter-form-manufacturers-label">
+                  <li class="filter-manufacturers-item filter-item">
+                    <input name="interskol" type="checkbox" class="filter-checkbox" id="filter-interskol">
+                    <label for="filter-interskol" class="filter-checkbox-label">
                       Интерскол
                     </label>
                   </li>
-                  <li class="catalog-filter-form-manufacturers-item">
-                    <input name="makita" type="checkbox" class="catalog-filter-form-manufacturers-input" id="filter-makita" checked>
-                    <label for="filter-makita" class="catalog-filter-form-manufacturers-label">
+                  <li class="filter-manufacturers-item filter-item">
+                    <input name="makita" type="checkbox" class="filter-checkbox" id="filter-makita" checked>
+                    <label for="filter-makita" class="filter-checkbox-label">
                       Makita
                     </label>
                   </li>
-                  <li class="catalog-filter-form-manufacturers-item">
-                    <input name="dewalt" type="checkbox" class="catalog-filter-form-manufacturers-input" id="filter-dewalt">
-                    <label for="filter-dewalt" class="catalog-filter-form-manufacturers-label">
+                  <li class="filter-manufacturers-item filter-item">
+                    <input name="dewalt" type="checkbox" class="filter-checkbox" id="filter-dewalt">
+                    <label for="filter-dewalt" class="filter-checkbox-label">
                       Dewalt
                     </label>
                   </li>
-                  <li class="catalog-filter-form-manufacturers-item">
-                    <input name="hitachi" type="checkbox" class="catalog-filter-form-manufacturers-input" id="filter-hitachi">
-                    <label for="filter-hitachi" class="catalog-filter-form-manufacturers-label">
+                  <li class="filter-manufacturers-item filter-item">
+                    <input name="hitachi" type="checkbox" class="filter-checkbox" id="filter-hitachi">
+                    <label for="filter-hitachi" class="filter-checkbox-label">
                       Hitachi
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-filter-form-power">
-                <legend class="catalog-filter-form-power-subtitle">
+              <fieldset class="filter-power filter-form-item">
+                <legend class="filter-power-subtitle filter-form-subtitle">
                   Питание:
                 </legend>
-                <ul class="catalog-filter-form-power-list">
-                  <li class="catalog-filter-form-power-item">
-                    <input type="radio" name="power" value="battery" class="catalog-filter-form-power-input" id="filter-battery" checked>
-                    <label for="filter-battery" class="catalog-filter-form-power-label">
-                      Аккумуляторное
+                <ul class="filter-list filter-power-list">
+                  <li class="filter-power-item filter-item">
+                    <input type="radio" name="power" value="battery" class="filter-radio" id="filter-battery" checked>
+                    <label class="filter-radio-label">
+                      Аккумуляторные
                     </label>
                   </li>
-                  <li class="catalog-filter-form-power-item">
-                    <input type="radio" name="power" value="network" class="catalog-filter-form-power-input" id="filter-network">
-                    <label for="filter-network" class="catalog-filter-form-power-label">
-                      Сетевое
+                  <li class="filter-power-item filter-item">
+                    <input type="radio" name="power" value="network" class="filter-radio" id="filter-network">
+                    <label class="filter-radio-label">
+                      Сетевые
                     </label>
                   </li>
                 </ul>
@@ -265,47 +271,41 @@
             </form>
           </div>
           <div class="sort-goods-wrapper">
-            <div class="catalog-sorting">
-              <h2 class="catalog-sorting-subtitle">
+            <div class="sorting">
+              <h2 class="sorting-subtitle">
                 Сортировка:
               </h2>
-              <ul class="catalog-sorting-list">
-                <li class="catalog-sorting-item">
-                  <a href="#" class="catalog-sorting-link">
+              <ul class="sorting-list">
+                <li class="sorting-item sorting-price">
+                  <a href="#" class="sorting-link">
                     По цене
                   </a>
                 </li>
-                <li class="catalog-sorting-item">
-                  <a href="#" class="catalog-sorting-link">
+                <li class="sorting-item sorting-type">
+                  <a href="#" class="sorting-link">
                     По типу
                   </a>
                 </li>
-                <li class="catalog-sorting-item">
-                  <a href="#" class="catalog-sorting-link">
+                <li class="sorting-item sorting-func">
+                  <a href="#" class="sorting-link">
                     По функционалу
                   </a></li>
-                <li class="catalog-sorting-item ascending">
-                  <a href="#" class="catalog-sorting-link ascending-link" aria-label="По возрастанию">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="catalog-sorting-svg ascending-svg" width="11" height="10" fill="none">
-                      <path fill="#C5C5C5" d="M5.5 10L0 0h11" class="catalog-sorting-path ascending-path"/>
-                    </svg>
+                <li class="sorting-item sorting-ascending">
+                  <a href="#" class="sorting-link ascending-link" aria-label="По возрастанию">
                   </a>
                 </li>
-                <li class="catalog-sorting-item descending">
-                  <a href="#" class="catalog-sorting-link descending-link" aria-label="По убыванию">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="catalog-sorting-svg descending-svg" width="11" height="10" fill="none">
-                      <path fill="#C5C5C5" d="M5.5 10L0 0h11" class="catalog-sorting-path descending-path"/>
-                    </svg>
+                <li class="sorting-item sorting-descending">
+                  <a href="#" class="sorting-link descending-link" aria-label="По убыванию">
                   </a>
                 </li>
               </ul>
             </div>
-            <ul class="catalog-goods">
+            <ul class="catalog-goods-list">
               <li class="goods-item catalog-goods-item">
                 <div class="goods-img">
                   <img src="img/catalog/hammer-1-2-3-5-8.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="144" height="128">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
@@ -331,7 +331,7 @@
                 <div class="goods-img">
                   <img src="img/catalog/hammer-1-2-3-5-8.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="144" height="128">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
@@ -357,7 +357,7 @@
                 <div class="goods-img">
                   <img src="img/catalog/hammer-1-2-3-5-8.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="144" height="128">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
@@ -382,7 +382,7 @@
                 <div class="goods-img">
                   <img src="img/catalog/hammer-4-6-7-9.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="127" height="112">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
@@ -408,7 +408,7 @@
                 <div class="goods-img">
                   <img src="img/catalog/hammer-1-2-3-5-8.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="144" height="128">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
@@ -434,7 +434,7 @@
                 <div class="goods-img">
                   <img src="img/catalog/hammer-4-6-7-9.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="127" height="112">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
@@ -460,7 +460,7 @@
                 <div class="goods-img">
                   <img src="img/catalog/hammer-4-6-7-9.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="127" height="112">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
@@ -486,7 +486,7 @@
                 <div class="goods-img">
                   <img src="img/catalog/hammer-1-2-3-5-8.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="144" height="128">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
@@ -512,7 +512,7 @@
                 <div class="goods-img">
                   <img src="img/catalog/hammer-4-6-7-9.png" class="catalog-goods-img" alt="Перфоратор BOSCH" width="127" height="112">
                 </div>
-                <div class="catalog-goods-links-wrapper">
+                <div class="goods-links-wrapper">
                   <a href="#" class="goods-buy-link">
                     Купить
                   </a>
