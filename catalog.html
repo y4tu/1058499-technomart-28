@@ -277,7 +277,7 @@
               </h2>
               <ul class="sorting-list">
                 <li class="sorting-item sorting-price">
-                  <a href="#" class="sorting-link">
+                  <a href="#" class="sorting-link active-link">
                     По цене
                   </a>
                 </li>
@@ -295,7 +295,7 @@
                   </a>
                 </li>
                 <li class="sorting-item sorting-descending">
-                  <a href="#" class="sorting-link descending-link sorting-arrow" aria-label="По убыванию">
+                  <a href="#" class="sorting-link descending-link sorting-arrow active" aria-label="По убыванию">
                   </a>
                 </li>
               </ul>
@@ -688,22 +688,21 @@
 
   <section class="popup popup-cart">
     <!--Попап корзины-->
-    <div>
-      <h2>
+    <div class="popup-wrapper cart-wrapper">
+      <h2 class="popup-cart-header">
         Товар добавлен в корзину!
       </h2>
-      <button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
-          <path fill="#EE3643" d="M13.3 10.5l7.4-7.4c.4-.4.4-1 0-1.4L19.3.3a1 1 0 00-1.4 0l-7.4 7.4L3.1.3a1 1 0 00-1.4 0L.3 1.7A1 1 0 00.3 3l7.4 7.4-7.4 7.4a1 1 0 000 1.4l1.4 1.4c.4.4 1 .4 1.4 0l7.4-7.4 7.4 7.4c.4.4 1 .4 1.4 0l1.4-1.4c.4-.4.4-1 0-1.4l-7.4-7.4z"/>
-        </svg>
-      </button>
-      <a href="#">
+    </div>
+    <div class="button-wrapper cart-button-wrapper">
+      <a href="#" class="popup-link popup-checkout red-button-link">
         Оформить заказ
       </a>
-      <a href="#">
+      <a href="#" class="popup-link popup-continue red-button-link">
         Продолжить покупки
       </a>
     </div>
+    <button class="cross cross-cart">
+    </button>
   </section>
 
 </body>
