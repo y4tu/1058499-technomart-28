@@ -1642,6 +1642,15 @@ img {
   display: none;
 }
 
+.catalog-breadcrumbs-link {
+  color: var(--black);
+}
+
+.catalog-breadcrumbs-link:hover,
+.catalog-breadcrumbs-link:focus {
+  opacity: 0.3;
+}
+
 .catalog-breadcrumbs-link-home::before {
   content: "";
   background-image: url(../img/catalog/icon-home.svg);
@@ -1652,6 +1661,10 @@ img {
   position: absolute;
   top: 6px;
   left: 0;
+}
+
+.current-link {
+  pointer-events: none;
 }
 
 /*Product group name*/
@@ -2032,49 +2045,38 @@ img {
   border-bottom: solid var(--basic-red) 1px;
 }
 
-.sorting-link:focus {
+.sorting-link:active {
   color: var(--basic-red);
   border: none;
 }
 
 .active-link {
   color: var(--basic-red);
-  border-color: var(--basic-red);
 }
 
-.sorting-arrow {
+.arrow-link {
   display: inline-block;
   border: 5px solid transparent;
-}
-
-.ascending-link {
   border-bottom: 10px solid var(--basic-graylight);
 }
 
-.descending-link {
-  border-top: 10px solid var(--basic-graylight);
-}
-
-.ascending-link:hover,
-.ascending-link:focus {
+.arrow-link:hover,
+.arrow-link:focus {
   border: 5px solid transparent;
   border-bottom: 10px solid var(--black);
 }
 
-.ascending-link:active {
+.arrow-link:active {
   border: 5px solid transparent;
   border-bottom: 10px solid var(--basic-red);
 }
 
-.descending-link:hover,
-.descending-link:focus {
-  border: 5px solid transparent;
-  border-top: 10px solid var(--black);
+.descending-link {
+  transform: rotate(180deg);
 }
 
-.descending-link:active {
-  border: 5px solid transparent;
-  border-top: 10px solid var(--basic-red);
+.active-arrow {
+  border-bottom: 10px solid var(--basic-red);
 }
 
 /* Pagination */
@@ -2418,7 +2420,9 @@ img {
   left: 0;
   right: 0;
   margin: auto;
+  border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px var(--special-popup-shadow);
+  z-index: 1;
 }
 
 .cross {
@@ -2431,6 +2435,7 @@ img {
   margin: 0;
   cursor: pointer;
   color: var(--basic-red);
+  outline: none;
 }
 
 .cross:hover,
@@ -2466,17 +2471,16 @@ img {
 .popup-map {
   width: 943px;
   height: 449px;
-  display: none;
+  /* display: none; */
 }
 
 .yandex-map {
   position: relative;
-  border-top: 5px solid var(--basic-red);
   background-color: var(--special-beige);
 }
 
 .cross-map {
-  top: 9px;
+  top: 8px;
   right: 8px;
 }
 
@@ -2494,8 +2498,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--white);
-  border-top: 7px solid var(--basic-red);
-  padding-top: 46px;
+  padding-top: 39px;
   padding-bottom: 37px;
   padding-left: 81px;
   padding-right: 80px;
@@ -2509,10 +2512,6 @@ img {
   color: var(--white);
 }
 
-.field-wrapper:first-child {
-  margin-right: 19px;
-}
-
 .feedback-label {
   font-family: var(--basic-font-heading);
   font-size: 18px;
@@ -2523,16 +2522,16 @@ img {
   display: flex;
   flex-direction: column;
   width: 220px;
+  margin-bottom: 13px;
+}
+
+.field-wrapper:first-child {
+  margin-right: 19px;
 }
 
 .field-wrapper:last-child {
+  margin: 0;
   width: 100%
-}
-
-.name-field-wrapper {
-}
-
-.email-field-wrapper {
 }
 
 .letter-field-wrapper {
@@ -2544,16 +2543,29 @@ img {
   border: 2px solid var(--basic-graylight);
   border-radius: 2px;
   resize: none;
-  margin-bottom: 13px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 12px;
   padding-right: 8px;
+  min-height: 38px;
+  outline: none;
+}
+
+.feedback-field:hover {
+  box-shadow: 0px 0px 5px var(--basic-graylight);
+}
+
+.feedback-field:focus {
+  box-shadow: 0px 0px 5px var(--basic-gray);
+}
+
+.feedback-field-letter {
+  min-height: 114px;
 }
 
 .cross-feedback {
-  top: 13px;
-  right: 9px;
+  top: 18px;
+  right: 10px;
 }
 
 .button-wrapper {
@@ -2576,7 +2588,7 @@ img {
 }
 
 .cross-cart {
-  top: 15px;
+  top: 9px;
   right: 9px;
 }
 
@@ -2593,8 +2605,8 @@ img {
   height: 66px;
   display: block;
   position: absolute;
-  top: 56px;
-  left: 82px;
+  top: 49px;
+  left: 81px;
   background-color: var(--success);
   border-radius: 50%;
   background-image: url(../img/catalog/mark.svg);
@@ -2604,8 +2616,8 @@ img {
 
 .cart-wrapper {
   justify-content: center;
-  padding-top: 73px;
-  padding-bottom: 68px;
+  padding-top: 67px;
+  padding-bottom: 67px;
   padding-left: 99px;
   padding-right: 100px;
 }
