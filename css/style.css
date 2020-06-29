@@ -2677,6 +2677,10 @@ img {
   box-shadow: 0px 0px 5px var(--basic-graylight);
 }
 
+.popup-continue:focus {
+  opacity: 0.5;
+}
+
 .show {
   display: block;
   animation: bounce 0.6s;
