@@ -1578,13 +1578,8 @@ img {
   margin-bottom: 32px;
 }
 
-.info-link {
+.feedback-link {
   min-width: 220px;
-  font-family: var(--basic-font-heading);
-  font-size: 14px;
-  line-height: 18px;
-  background-color: var(--basic-red);
-  color: var(--white);
 }
 
 .company-info-link {
@@ -1592,7 +1587,7 @@ img {
   height: 38px;
 }
 
-.contacts-minimap-link {
+.minimap-link {
   min-width: 300px;
   min-height: 158px;
   background-color: var(--special-beige);
@@ -2471,7 +2466,7 @@ img {
 .popup-map {
   width: 943px;
   height: 449px;
-  /* display: none; */
+  display: none;
 }
 
 .yandex-map {
@@ -2581,6 +2576,46 @@ img {
   line-height: 18px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .popup-cart {
   width: 620px;
   height: 283px;
@@ -2640,4 +2675,13 @@ img {
 .popup-continue:focus {
   background-color: var(--white);
   box-shadow: 0px 0px 5px var(--basic-graylight);
+}
+
+.show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.error {
+  animation: shake 0.6s;
 }
