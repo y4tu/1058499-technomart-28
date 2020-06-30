@@ -1,17 +1,16 @@
 var mapOpen = document.querySelector(".minimap-link");
 var map = document.querySelector(".popup-map");
-var mapClose = document.querySelector(".cross-map")
+var mapClose = document.querySelector(".cross-map");
 var cartOpenBtns = document.querySelectorAll(".goods-buy-link");
 var cart = document.querySelector(".popup-cart");
 var closeBtns = document.querySelectorAll(".cross");
-var continueShopping = document.querySelector(".popup-continue")
+var continueShopping = document.querySelector(".popup-continue");
 var feedbackOpen = document.querySelector(".feedback-link");
 var feedback = document.querySelector(".popup-feedback");
-var feedbackClose = document.querySelector(".cross-feedback")
+var feedbackClose = document.querySelector(".cross-feedback");
 if (feedback) {
     var feedbackName = feedback.querySelector("#name-field");
     var feedbackEmail = feedback.querySelector("#email-field");
-    var feedbackLetter = feedback.querySelector("#letter-field");
     var feedbackForm = feedback.querySelector(".popup-form");
 }
 var isStorageSupport = true;
@@ -26,7 +25,7 @@ catch (err) {
 }
 
 if (cartOpenBtns) {
-    for (let i = 0; i < cartOpenBtns.length; i++) {
+    for (var i = 0; i < cartOpenBtns.length; i++) {
       cartOpenBtns[i].addEventListener("click", function (evt) {
           evt.preventDefault();
           cart.classList.add("show");
@@ -35,11 +34,11 @@ if (cartOpenBtns) {
 }
 
 if (closeBtns && cart) {
-    for (let i = 0; i < closeBtns.length; i++) {
+    for (var i = 0; i < closeBtns.length; i++) {
       closeBtns[i].addEventListener("click", function (evt) {
           evt.preventDefault();
           cart.classList.remove("show");
-      })
+      });
   }
 }
 
@@ -47,7 +46,7 @@ if (mapClose) {
     mapClose.addEventListener("click", function (evt) {
       evt.preventDefault();
       map.classList.remove("show");
-      })
+      });
 }
 
 if (feedbackClose) {
@@ -55,14 +54,14 @@ if (feedbackClose) {
       evt.preventDefault();
       feedback.classList.remove("show");
       feedback.classList.remove("error");
-      })
+      });
 }
 
 if (continueShopping) {
     continueShopping.addEventListener("click", function (evt) {
       evt.preventDefault();
       cart.classList.remove("show");
-  })
+  });
 }
 
 window.addEventListener("keydown", function (evt) {
