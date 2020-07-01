@@ -8,6 +8,12 @@ var continueShopping = document.querySelector(".popup-continue");
 var feedbackOpen = document.querySelector(".feedback-link");
 var feedback = document.querySelector(".popup-feedback");
 var feedbackClose = document.querySelector(".cross-feedback");
+var shippingName = document.querySelector(".services-shipping");
+var warrantyName = document.querySelector(".services-warranty");
+var creditName = document.querySelector(".services-credit");
+var shippingContent = document.querySelector(".container-shipping");
+var warrantyContent = document.querySelector(".container-warranty");
+var creditContent = document.querySelector(".container-credit");
 if (feedback) {
     var feedbackName = feedback.querySelector("#name-field");
     var feedbackEmail = feedback.querySelector("#email-field");
@@ -125,3 +131,69 @@ window.addEventListener("keydown", function (evt) {
       }
     }
 });
+
+if (shippingName) {
+  shippingName.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    shippingName.classList.add("services-list-link-active");
+    if (warrantyName.classList.contains("services-list-link-active")) {
+      warrantyName.classList.remove("services-list-link-active");
+    }
+    if (creditName.classList.contains("services-list-link-active")) {
+      creditName.classList.remove("services-list-link-active");
+    }
+    if (shippingName.classList.contains("services-list-link-active")) {
+      shippingContent.classList.add("show-service");
+    }
+    if (warrantyContent.classList.contains("show-service")) {
+      warrantyContent.classList.remove("show-service");
+    }
+    if (creditContent.classList.contains("show-service")) {
+      creditContent.classList.remove("show-service");
+    }
+  })
+}
+
+if (warrantyName) {
+  warrantyName.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (shippingName.classList.contains("services-list-link-active")) {
+      shippingName.classList.remove("services-list-link-active");
+    }
+    warrantyName.classList.add("services-list-link-active");
+    if (creditName.classList.contains("services-list-link-active")) {
+      creditName.classList.remove("services-list-link-active");
+    }
+    if (shippingContent.classList.contains("show-service")) {
+      shippingContent.classList.remove("show-service");
+    }
+    if (warrantyName.classList.contains("services-list-link-active")) {
+      warrantyContent.classList.add("show-service");
+    }
+    if (creditContent.classList.contains("show-service")) {
+      creditContent.classList.remove("show-service");
+    }
+  })
+}
+
+if (creditName) {
+  creditName.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (shippingName.classList.contains("services-list-link-active")) {
+      shippingName.classList.remove("services-list-link-active");
+    }
+    if (warrantyName.classList.contains("services-list-link-active")) {
+      warrantyName.classList.remove("services-list-link-active");
+    }
+    creditName.classList.add("services-list-link-active");
+    if (shippingContent.classList.contains("show-service")) {
+      shippingContent.classList.remove("show-service");
+    }
+    if (warrantyContent.classList.contains("show-service")) {
+      warrantyContent.classList.remove("show-service");
+    }
+    if (creditName.classList.contains("services-list-link-active")) {
+      creditContent.classList.add("show-service");
+    }
+  })
+}

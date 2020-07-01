@@ -1407,18 +1407,21 @@ img {
   outline: none;
 }
 
-.services-list-link:hover,
-.services-list-link:focus {
+.services-list-link:hover {
   background-color: var(--basic-graydark);
   color: var(--white);
+}
+
+.services-list-link:focus,
+.services-list-link:active{
+  background-color: var(--white);
+  box-shadow: none;
+  color: var(--background-gray);
 }
 
 .services-list-link-active {
   background-color: var(--white);
   box-shadow: none;
-}
-
-.services-list-link-active {
   color: var(--background-gray);
 }
 
@@ -1435,7 +1438,6 @@ img {
 
 .container-shipping {
   background-image: url(../img/index/shipping-car.png);
-  background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: 151px;
@@ -1446,22 +1448,20 @@ img {
 
 .container-warranty {
   background-image: url(../img/index/warranty.png);
-  background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto;
-  background-position-x: 239px;
-  background-position-y: -2px;
+  background-position-x: 230px;
+  background-position-y: 0;
   min-width: 468px;
   min-height: 261px;
 }
 
 .container-credit {
   background-image: url(../img/index/credit.png);
-  background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto;
-  background-position-x: 165px;
-  background-position-y: -3px;
+  background-position-x: 150px;
+  background-position-y: 0;
   min-width: 468px;
   min-height: 261px;
 }
@@ -1473,7 +1473,7 @@ img {
 }
 
 .services-description-container {
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
 }
@@ -2707,4 +2707,8 @@ background-color: var(--special-radio-hover);
 
 .error {
   animation: shake 0.6s;
+}
+
+.show-service {
+  display: block;
 }
